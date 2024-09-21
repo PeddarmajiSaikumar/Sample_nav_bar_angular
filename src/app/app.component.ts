@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { TopNavComponent } from "./top-nav/top-nav.component";
+import { SideNavComponent } from "./side-nav/side-nav.component";
+import { FooterComponent } from "./footer/footer.component";
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, TopNavComponent, SideNavComponent, FooterComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'my-app';
+}
